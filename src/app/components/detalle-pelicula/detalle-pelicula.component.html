@@ -1,0 +1,20 @@
+
+
+
+
+
+
+
+
+
+<div  *ngIf="detallePelicula" class="card" style="width: 18rem;">
+    <img [src]="this.detallePelicula.Foto" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">{{detallePelicula.Nombre}}</h5>
+      <p class="card-text">{{detallePelicula.tipo}}</p>
+      <p class="card-text">{{detallePelicula.fechaEstreno}}</p>
+      <p class="card-text">{{detallePelicula.cantidadPublico}}</p>
+      <button class="btn btn-danger btn-block"  (click)="borrarPelicula()">Borrar Pelicula</button>
+      
+    </div>
+  </div>

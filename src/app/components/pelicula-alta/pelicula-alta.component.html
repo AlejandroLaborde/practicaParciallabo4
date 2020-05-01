@@ -1,0 +1,29 @@
+<button [routerLink]="['/Bienvenido']" routerLinkActive="router-link-active"  >volver Bienvenido</button>
+
+
+
+   
+<br>
+<br>
+<br>
+<br>
+<form [formGroup]="formulario" (ngSubmit)="onSubmit()">
+  
+      Nombre Pelicula:
+      <input type="text" formControlName="Nombre">
+      <br>
+       Tipo:
+      <input type="text" formControlName="tipo">
+      <br>
+      Cantidad Publico:
+      <input type="number" formControlName="cantidadPublico">
+      <br>
+      Fecha Estreno:
+      <input type="date" formControlName="fechaEstreno">
+  </form>
+
+
+  <button type="submit" [disabled]="!formulario">Submit</button>
+  <br>
+
+<app-tabla-actor [actores]="this.actores" ></app-tabla-actor>
