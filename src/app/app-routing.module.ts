@@ -15,6 +15,7 @@ const routes: Routes = [
   {path: 'actor/alta', component: ActorAltaComponent },
   {path: 'actor/listado', component: ActorListadoComponent },
   {path: 'peliculas/listado', component: PeliculasListadoComponent },
+  {path: 'paises/listado', component: PeliculasListadoComponent },
   {path: '**', pathMatch: 'full', redirectTo: 'Bienvenido'}
 ];
 

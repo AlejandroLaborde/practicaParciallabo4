@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { PeliculasService } from 'src/app/services/peliculas.service';
 import { peliculas } from 'src/app/models/peliculas';
-import { timer } from 'rxjs';
+import { timer, Observable } from 'rxjs';
 
 
 @Component({
@@ -19,8 +19,8 @@ export class PeliculasListadoComponent implements OnInit {
     this.peliculas = this.peliculasService.obtenerPeliculas();
   }
 
-  enviarPeliculaSeleccionada( event ){
-    this.peliculaSeleccionada = event;
+  enviarPeliculaSeleccionada( pelicula ){
+    this.peliculaSeleccionada = pelicula;
   }
 
   eliminar( id ){

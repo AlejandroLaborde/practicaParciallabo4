@@ -1,29 +1,45 @@
-<button [routerLink]="['/Bienvenido']" routerLinkActive="router-link-active"  >volver Bienvenido</button>
 
+<app-navbar></app-navbar>
+<div class="container" style="text-align: justify;">
 
-
-   
-<br>
-<br>
-<br>
-<br>
-<form [formGroup]="formulario" (ngSubmit)="onSubmit()">
+<form [formGroup]="formulario" >
   
       Nombre Pelicula:
-      <input type="text" formControlName="Nombre">
+      <input class="form-control" type="text" placeholder="name" formControlName="Nombre">
       <br>
        Tipo:
-      <input type="text" formControlName="tipo">
-      <br>
+       <select class="form-control" formControlName="tipo">
+        <option>terror</option>
+        <option>amor</option>
+        <option>comedia</option>
+        <option>otro</option>
+      </select>
       Cantidad Publico:
-      <input type="number" formControlName="cantidadPublico">
+      <input class="form-control" type="number" formControlName="cantidadPublico">
       <br>
       Fecha Estreno:
-      <input type="date" formControlName="fechaEstreno">
-  </form>
+      <input class="form-control" type="date" formControlName="fechaEstreno">
+    <br>
 
+      Actor Seleccionado
+      <p *ngIf="actorPeli">{{actorPeli.Nombre}} {{actorPeli.apellido}}</p>
+      <p *ngIf="!actorPeli">Falta completar un actor</p>
 
-  <button type="submit" [disabled]="!formulario">Submit</button>
+</form>
+
   <br>
+  <app-tabla-actor [actores]="this.actores" (actorSeleccionado)="actorSeleccionado($event)" ></app-tabla-actor>
+  <br>
+  <button type="button" class="btn btn-success btn-block" [disabled]="!formulario.valid" (click)="onSubmit()" [disabled]="!formulario">Dar de alta</button>
+</div>
 
-<app-tabla-actor [actores]="this.actores" ></app-tabla-actor>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>

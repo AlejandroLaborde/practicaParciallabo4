@@ -2,9 +2,9 @@
 
 
 
-<h1>Actores</h1>
+
 <div class="card-group">
-    <div class="card" *ngFor="let actor of actores" (click)="seleccionado(actor)">
+    <div class="card" style="max-width: 300px; margin:10px" *ngFor="let actor of actores"  (click)="seleccionado(actor)">
       <img [src]="actor.Foto" class="card-img-top" alt="...">
       <div class="card-body">
         <h5 class="card-title">{{actor.Nombre}} {{actor.apellido}}</h5>

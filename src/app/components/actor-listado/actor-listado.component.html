@@ -1,8 +1,8 @@
 
 
-<button [routerLink]="['/Bienvenido']" routerLinkActive="router-link-active"  >volver Bienvenido</button>
+<app-navbar></app-navbar>
+<h1 style="text-align: center;">Actores Listado</h1>
+<div style="display: flex;justify-content: center;">
 
-
-<h1>Actor Listado</h1>
-
-<app-tabla-actor [actores]="this.actores" ></app-tabla-actor>
+    <app-tabla-actor [actores]="this.actores" ></app-tabla-actor>
+</div>

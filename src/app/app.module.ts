@@ -15,6 +15,13 @@ import { TablaPeliculaComponent } from './components/tabla-pelicula/tabla-pelicu
 import { DetallePeliculaComponent } from './components/detalle-pelicula/detalle-pelicula.component';
 import { TablaActorComponent } from './components/tabla-actor/tabla-actor.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { AngularFireModule } from 'angularfire2';
+import { environment } from 'src/environments/environment';
+import { AngularFirestore } from 'angularfire2/firestore';
+import { NavbarComponent } from './components/navbar/navbar.component';
+import { PaisesListadoComponent } from './components/paises-listado/paises-listado.component';
+
+
 
 @NgModule({
   declarations: [
@@ -27,16 +34,22 @@ import { ReactiveFormsModule } from '@angular/forms';
     PeliculasListadoComponent,
     TablaPeliculaComponent,
     DetallePeliculaComponent,
-    TablaActorComponent
+    TablaActorComponent,
+    NavbarComponent,
+    PaisesListadoComponent
   ],
   imports: [
     ReactiveFormsModule,
     HttpClientModule,
     FormsModule,
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    AngularFireModule.initializeApp(environment.firebaseConfig)
+    
   ],
-  providers: [],
+  providers: [
+    AngularFirestore
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

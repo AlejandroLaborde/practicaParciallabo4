@@ -20,7 +20,7 @@ export class ActorService {
 
 
   obtenerActores(){
-    return  this.actores;
+    return  JSON.parse(localStorage.getItem('actores'));
   }
 
 

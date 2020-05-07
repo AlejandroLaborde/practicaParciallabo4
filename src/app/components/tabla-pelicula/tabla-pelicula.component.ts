@@ -1,4 +1,7 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+import { Observable } from 'rxjs';
+import { peliculas } from 'src/app/models/peliculas';
+import { PeliculasService } from 'src/app/services/peliculas.service';
 
 @Component({
   selector: 'app-tabla-pelicula',
@@ -9,11 +12,11 @@ export class TablaPeliculaComponent implements OnInit {
 
   @Output() peliculaSeleccionada = new EventEmitter();
 
-  @Input() peliculas; 
-  constructor() { }
+  @Input() peliculas:peliculas[]; 
+  constructor(  ) { }
 
   ngOnInit(): void {
-
+    
   }
 
   verDetalles( pelicula ){

@@ -16,8 +16,8 @@ export class DetallePeliculaComponent implements OnInit {
   }
 
   borrarPelicula(){
-    
+    console.log( this.detallePelicula );
     this.eliminarPelicula.emit ( this.detallePelicula.id);
-    this.eliminarPelicula=null;
+    //this.eliminarPelicula=null;
   }
 }
