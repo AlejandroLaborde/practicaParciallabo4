@@ -18,6 +18,6 @@ export class DetallePaisComponent implements OnInit {
   desabilitar(){
 
     this.deshabilitarPais.emit( this.detallePais );
-
+    this.detallePais=null;
   }
 }

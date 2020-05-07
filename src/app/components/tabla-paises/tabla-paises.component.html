@@ -9,9 +9,9 @@
     </thead>
     <tbody> 
         <tr *ngFor="let pais of paises"  (click)="seleccionPais(pais)" >
-            <th>{{pais.name}}</th>
+            <th>{{pais.nombre}}</th>
             <th>{{pais.capital}}</th>
-            <th>{{pais.population}}</th>
+            <th>{{pais.poblacion}}</th>
             <td> <img [src]="pais.flag" width="80px" > </td>
           </tr>
     </tbody>

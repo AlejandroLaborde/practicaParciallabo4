@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { PaisesService } from 'src/app/services/paises.service';
+import { pais } from 'src/app/models/pais';
 
 @Component({
   selector: 'app-actor-alta',
@@ -8,13 +9,11 @@ import { PaisesService } from 'src/app/services/paises.service';
 })
 export class ActorAltaComponent implements OnInit {
 
-  paises;
+  paises:pais[];
   constructor( private paisesService:PaisesService ) { }
 
   ngOnInit(): void {
-    this.paisesService.obtenerPaises().subscribe( resp=>{
-      this.paises=resp;
-    } )
+    this.paises = this.paisesService.obtenerPaises();
   }
 
 }

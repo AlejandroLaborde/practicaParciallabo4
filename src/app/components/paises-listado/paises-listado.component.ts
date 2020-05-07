@@ -14,10 +14,7 @@ export class PaisesListadoComponent implements OnInit {
   constructor( private paisesService:PaisesService ) { }
 
   ngOnInit(): void {
-    this.paisesService.obtenerPaises().subscribe( resp=>{
-      console.log(resp);
-      this.paisesServicio = resp;
-    })
+    this.paisesServicio = this.paisesService.obtenerPaises();
   }
 
   verDetalles( pais ){
@@ -25,8 +22,9 @@ export class PaisesListadoComponent implements OnInit {
   }
 
   deshabilitandoPais( paisADesabilitar ){
-
-    
+    console.log(paisADesabilitar);
+    this.paisesService.deshabilitarPais( paisADesabilitar );
+    this.paisesServicio=this.paisesService.obtenerPaises();
   }
 
 }

@@ -20,7 +20,7 @@ export class TablaPaisesComponent implements OnInit {
 
   seleccionPais( paisSelecionado ){
     
-    this.paisSelected.emit( new pais(paisSelecionado.name, paisSelecionado.capital, paisSelecionado.population, paisSelecionado.flag) );
+    this.paisSelected.emit( paisSelecionado );
 
   }
 }

@@ -1,13 +1,13 @@
-[debug] [2020-05-07T22:51:57.251Z] ----------------------------------------------------------------------
-[debug] [2020-05-07T22:51:57.254Z] Command:       E:\node\node.exe C:\Users\Alejandro\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
-[debug] [2020-05-07T22:51:57.254Z] CLI Version:   8.0.2
-[debug] [2020-05-07T22:51:57.254Z] Platform:      win32
-[debug] [2020-05-07T22:51:57.254Z] Node Version:  v10.16.3
-[debug] [2020-05-07T22:51:57.256Z] Time:          Thu May 07 2020 19:51:57 GMT-0300 (GMT-03:00)
-[debug] [2020-05-07T22:51:57.256Z] ----------------------------------------------------------------------
-[debug] [2020-05-07T22:51:57.256Z] 
-[debug] [2020-05-07T22:51:57.268Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2020-05-07T22:51:57.269Z] > authorizing via signed-in user
-[debug] [2020-05-07T22:51:57.269Z] [iam] checking project parciallabo4 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
-[debug] [2020-05-07T22:51:57.273Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/parciallabo4:testIamPermissions  
+[debug] [2020-05-07T23:29:49.344Z] ----------------------------------------------------------------------
+[debug] [2020-05-07T23:29:49.348Z] Command:       E:\node\node.exe C:\Users\Alejandro\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2020-05-07T23:29:49.349Z] CLI Version:   8.0.2
+[debug] [2020-05-07T23:29:49.349Z] Platform:      win32
+[debug] [2020-05-07T23:29:49.349Z] Node Version:  v10.16.3
+[debug] [2020-05-07T23:29:49.350Z] Time:          Thu May 07 2020 20:29:49 GMT-0300 (GMT-03:00)
+[debug] [2020-05-07T23:29:49.350Z] ----------------------------------------------------------------------
+[debug] [2020-05-07T23:29:49.350Z] 
+[debug] [2020-05-07T23:29:49.362Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-05-07T23:29:49.363Z] > authorizing via signed-in user
+[debug] [2020-05-07T23:29:49.364Z] [iam] checking project parciallabo4 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2020-05-07T23:29:49.369Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/parciallabo4:testIamPermissions  
  {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
