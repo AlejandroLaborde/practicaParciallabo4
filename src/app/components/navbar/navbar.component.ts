@@ -33,6 +33,10 @@ export class NavbarComponent implements OnInit {
         this.router.navigate(['peliculas/alta']);
       break;
 
+      case 'paisesListado':
+        this.router.navigate(['paises/listado']);
+      break;
+
     }
   }
 }

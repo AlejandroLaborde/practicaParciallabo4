@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { PaisesService } from 'src/app/services/paises.service';
 
 @Component({
   selector: 'app-paises-listado',
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PaisesListadoComponent implements OnInit {
 
-  constructor() { }
+  paisesServicio;
+  constructor( private paisesService:PaisesService ) { }
 
   ngOnInit(): void {
+    this.paisesService.obtenerPaises().subscribe( resp=>{
+      console.log(resp);
+      this.paisesServicio = resp;
+    })
   }
 
 }

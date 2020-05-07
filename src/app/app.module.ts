@@ -20,6 +20,7 @@ import { environment } from 'src/environments/environment';
 import { AngularFirestore } from 'angularfire2/firestore';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { PaisesListadoComponent } from './components/paises-listado/paises-listado.component';
+import { TablaPaisesComponent } from './components/tabla-paises/tabla-paises.component';
 
 
 
@@ -36,7 +37,8 @@ import { PaisesListadoComponent } from './components/paises-listado/paises-lista
     DetallePeliculaComponent,
     TablaActorComponent,
     NavbarComponent,
-    PaisesListadoComponent
+    PaisesListadoComponent,
+    TablaPaisesComponent
   ],
   imports: [
     ReactiveFormsModule,
