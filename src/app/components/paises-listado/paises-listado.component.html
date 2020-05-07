@@ -1,3 +1,4 @@
 
 <app-navbar></app-navbar>
-<app-tabla-paises [paises]="this.paisesServicio" ></app-tabla-paises>
+<app-tabla-paises [paises]="this.paisesServicio" (paisSelected)="verDetalles($event)"></app-tabla-paises>
+<app-detalle-pais [detallePais]="this.paisSeleccionado" (deshabilitarPais)="deshabilitandoPais($event)" ></app-detalle-pais>

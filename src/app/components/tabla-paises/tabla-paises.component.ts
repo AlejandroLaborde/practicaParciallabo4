@@ -1,5 +1,7 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { PaisesService } from 'src/app/services/paises.service';
+import { pais } from 'src/app/models/pais';
+
 
 @Component({
   selector: 'app-tabla-paises',
@@ -8,6 +10,7 @@ import { PaisesService } from 'src/app/services/paises.service';
 })
 export class TablaPaisesComponent implements OnInit {
 
+  @Output() paisSelected = new EventEmitter<pais>();
   @Input() paises;
   constructor( private paisesS: PaisesService) { }
 
@@ -15,4 +18,9 @@ export class TablaPaisesComponent implements OnInit {
   
   }
 
+  seleccionPais( paisSelecionado ){
+    
+    this.paisSelected.emit( new pais(paisSelecionado.name, paisSelecionado.capital, paisSelecionado.population, paisSelecionado.flag) );
+
+  }
 }

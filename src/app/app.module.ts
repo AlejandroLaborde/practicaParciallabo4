@@ -21,6 +21,7 @@ import { AngularFirestore } from 'angularfire2/firestore';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { PaisesListadoComponent } from './components/paises-listado/paises-listado.component';
 import { TablaPaisesComponent } from './components/tabla-paises/tabla-paises.component';
+import { DetallePaisComponent } from './components/detalle-pais/detalle-pais.component';
 
 
 
@@ -38,7 +39,8 @@ import { TablaPaisesComponent } from './components/tabla-paises/tabla-paises.com
     TablaActorComponent,
     NavbarComponent,
     PaisesListadoComponent,
-    TablaPaisesComponent
+    TablaPaisesComponent,
+    DetallePaisComponent
   ],
   imports: [
     ReactiveFormsModule,

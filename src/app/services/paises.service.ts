@@ -6,11 +6,15 @@ import { HttpClient } from '@angular/common/http';
 })
 export class PaisesService {
 
+  paisesLocal;
   constructor( private httpClient:HttpClient) { }
 
   obtenerPaises(){
+
     return this.httpClient.get('https://restcountries.eu/rest/v2/region/americas');
   }
+
+
 
 
 }

@@ -7,8 +7,8 @@
         <th scope="col">Foto</th>
       </tr>
     </thead>
-    <tbody>
-        <tr *ngFor="let pais of paises" >
+    <tbody> 
+        <tr *ngFor="let pais of paises"  (click)="seleccionPais(pais)" >
             <th>{{pais.name}}</th>
             <th>{{pais.capital}}</th>
             <th>{{pais.population}}</th>

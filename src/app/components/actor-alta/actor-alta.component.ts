@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { PaisesService } from 'src/app/services/paises.service';
 
 @Component({
   selector: 'app-actor-alta',
@@ -7,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ActorAltaComponent implements OnInit {
 
-  constructor() { }
+  paises;
+  constructor( private paisesService:PaisesService ) { }
 
   ngOnInit(): void {
+    this.paisesService.obtenerPaises().subscribe( resp=>{
+      this.paises=resp;
+    } )
   }
 
 }

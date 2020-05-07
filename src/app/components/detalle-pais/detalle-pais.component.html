@@ -1,0 +1,14 @@
+
+
+
+
+<div  *ngIf="detallePais" class="card" style="width: 18rem;">
+    <img [src]="this.detallePais.flag" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h2 class="card-title">{{detallePais.nombre}}</h2>
+      <p class="card-text">Capital: {{detallePais.capital}}</p>
+      <p class="card-text">Poblacion: {{detallePais.poblacion}}</p>
+      <!-- <button class="btn btn-danger btn-block" (click)="desabilitar()" >Desabilitar Pais</button> -->
+      
+    </div>
+  </div>

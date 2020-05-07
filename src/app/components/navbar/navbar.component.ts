@@ -36,6 +36,9 @@ export class NavbarComponent implements OnInit {
       case 'paisesListado':
         this.router.navigate(['paises/listado']);
       break;
+      case 'altaActor':
+        this.router.navigate(['actor/alta']);
+      break;
 
     }
   }
