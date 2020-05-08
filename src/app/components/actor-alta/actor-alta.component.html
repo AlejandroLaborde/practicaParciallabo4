@@ -1,5 +1,30 @@
 <app-navbar></app-navbar>
 
+<H1>Alta Actor</H1>
+<div style="display: flex;justify-content: space-around;">
+<form [formGroup]="formulario" >
+  
+    Nombre Actor:
+    <input class="form-control" type="text" placeholder="name" formControlName="Nombre">
+    <br>
+     Apellido:
+     <input class="form-control" type="text" placeholder="name" formControlName="Apellido">
+
+     Fecha Nacimiento:
+     <input class="form-control" type="date" formControlName="FechaNacimiento">
+     
+    sexo:
+    <input class="form-control" type="text" formControlName="sexo">
+    <br>
+
+    <button type="button" class="btn btn-success btn-block" [disabled]="!formulario.valid" (click)="onSubmit()" >Dar de alta</button>
+</form>
+<br>
+    <app-detalle-pais *ngIf="this.paisSeleccionado" [detallePais]="this.paisSeleccionado" ></app-detalle-pais>
+    <p *ngIf="!this.paisSeleccionado" >DEBE SELECCIONAR UN PAIS</p>
+
+</div>
 
 
-<app-tabla-paises [paises]="this.paises" ></app-tabla-paises>
+<br>
+<app-tabla-paises [paises]="this.paises" (paisSelected)="seleccionoPais($event)" ></app-tabla-paises>

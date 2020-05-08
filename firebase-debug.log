@@ -1,13 +1,37 @@
-[debug] [2020-05-07T23:29:49.344Z] ----------------------------------------------------------------------
-[debug] [2020-05-07T23:29:49.348Z] Command:       E:\node\node.exe C:\Users\Alejandro\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
-[debug] [2020-05-07T23:29:49.349Z] CLI Version:   8.0.2
-[debug] [2020-05-07T23:29:49.349Z] Platform:      win32
-[debug] [2020-05-07T23:29:49.349Z] Node Version:  v10.16.3
-[debug] [2020-05-07T23:29:49.350Z] Time:          Thu May 07 2020 20:29:49 GMT-0300 (GMT-03:00)
-[debug] [2020-05-07T23:29:49.350Z] ----------------------------------------------------------------------
-[debug] [2020-05-07T23:29:49.350Z] 
-[debug] [2020-05-07T23:29:49.362Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2020-05-07T23:29:49.363Z] > authorizing via signed-in user
-[debug] [2020-05-07T23:29:49.364Z] [iam] checking project parciallabo4 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
-[debug] [2020-05-07T23:29:49.369Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/parciallabo4:testIamPermissions  
+[debug] [2020-05-08T00:15:40.376Z] ----------------------------------------------------------------------
+[debug] [2020-05-08T00:15:40.378Z] Command:       E:\node\node.exe C:\Users\Alejandro\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2020-05-08T00:15:40.379Z] CLI Version:   8.0.2
+[debug] [2020-05-08T00:15:40.379Z] Platform:      win32
+[debug] [2020-05-08T00:15:40.379Z] Node Version:  v10.16.3
+[debug] [2020-05-08T00:15:40.433Z] Time:          Thu May 07 2020 21:15:40 GMT-0300 (GMT-03:00)
+[debug] [2020-05-08T00:15:40.433Z] ----------------------------------------------------------------------
+[debug] [2020-05-08T00:15:40.433Z] 
+[debug] [2020-05-08T00:15:40.455Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-05-08T00:15:40.456Z] > authorizing via signed-in user
+[debug] [2020-05-08T00:15:40.457Z] [iam] checking project parciallabo4 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2020-05-08T00:15:40.465Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2020-05-08T00:15:40.466Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2020-05-08T00:15:40.855Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Fri, 08 May 2020 00:15:47 GMT","server":"scaffolding on HTTPServer2","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-27=\":443\"; ma=2592000,h3-25=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-05-08T00:15:40.865Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/parciallabo4:testIamPermissions  
  {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2020-05-08T00:15:42.323Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Fri, 08 May 2020 00:15:48 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=1073","alt-svc":"h3-27=\":443\"; ma=2592000,h3-25=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-05-08T00:15:42.325Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/parciallabo4  
+ 
+[debug] [2020-05-08T00:15:44.063Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Fri, 08 May 2020 00:15:50 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-27=\":443\"; ma=2592000,h3-25=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] === Deploying to 'parciallabo4'...
+[info] 
+[info] i  deploying hosting
+[debug] [2020-05-08T00:15:44.069Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/parciallabo4/versions  
+ {"config":{},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2020-05-08T00:15:46.284Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Fri, 08 May 2020 00:15:52 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-27=\":443\"; ma=2592000,h3-25=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] i  hosting[parciallabo4]: beginning deploy...
+[info] i  hosting[parciallabo4]: found 22 files in dist/parcialLabo4
+[debug] [2020-05-08T00:15:46.355Z] [hosting] hash cache [ZGlzdFxwYXJjaWFsTGFibzQ] stored for 22 files
+[debug] [2020-05-08T00:15:46.355Z] [hosting][hash queue][FINAL] {"max":44,"min":1,"avg":10.227272727272727,"active":0,"complete":22,"success":22,"errored":0,"retried":0,"total":22,"elapsed":55}
+[debug] [2020-05-08T00:15:46.356Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/parciallabo4/versions/8eba6e78e6de446f:populateFiles  
+ <request body omitted>
+[debug] [2020-05-08T00:15:48.008Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Fri, 08 May 2020 00:15:54 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-27=\":443\"; ma=2592000,h3-25=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-05-08T00:15:48.012Z] [hosting][populate queue][FINAL] {"max":1658,"min":1658,"avg":1658,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":1661}
+[debug] [2020-05-08T00:15:48.012Z] [hosting] uploads queued: 4

@@ -4,5 +4,9 @@
 <h1 style="text-align: center;">Actores Listado</h1>
 <div style="display: flex;justify-content: center;">
 
-    <app-tabla-actor [actores]="this.actores" ></app-tabla-actor>
+    <app-tabla-actor [actores]="this.actores" (actorSeleccionado)="actorSelected($event)" ></app-tabla-actor>
+</div>
+<div style="display: flex;justify-content: space-around;">
+<app-detalle-pais *ngIf="this.selectedActor" [detallePais]="this.selectedActor.paisOrigen" ></app-detalle-pais>
+<app-detalle-actor *ngIf="this.selectedActor" [actor]="this.selectedActor" ></app-detalle-actor>
 </div>

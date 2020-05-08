@@ -22,6 +22,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { PaisesListadoComponent } from './components/paises-listado/paises-listado.component';
 import { TablaPaisesComponent } from './components/tabla-paises/tabla-paises.component';
 import { DetallePaisComponent } from './components/detalle-pais/detalle-pais.component';
+import { DetalleActorComponent } from './components/detalle-actor/detalle-actor.component';
 
 
 
@@ -40,7 +41,8 @@ import { DetallePaisComponent } from './components/detalle-pais/detalle-pais.com
     NavbarComponent,
     PaisesListadoComponent,
     TablaPaisesComponent,
-    DetallePaisComponent
+    DetallePaisComponent,
+    DetalleActorComponent
   ],
   imports: [
     ReactiveFormsModule,

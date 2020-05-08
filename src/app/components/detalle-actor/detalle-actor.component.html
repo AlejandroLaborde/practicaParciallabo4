@@ -1,0 +1,21 @@
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="card" style="max-width: 300px; margin:10px">
+    <img [src]="actor.Foto" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">{{actor.Nombre}} {{actor.apellido}}</h5>
+      <p class="card-text">{{actor.FechaNacimiento}}</p>
+      <p class="card-text"><small class="text-muted">{{actor.sexo}}</small></p>
+      <img [src]="actor.paisOrigen.flag" class="card-img-top" alt="...">
+    </div>
+  </div>

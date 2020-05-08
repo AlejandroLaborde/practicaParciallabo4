@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActorService } from 'src/app/services/actor.service';
+import { Actor } from 'src/app/models/actor';
 
 @Component({
   selector: 'app-actor-listado',
@@ -9,6 +10,7 @@ import { ActorService } from 'src/app/services/actor.service';
 export class ActorListadoComponent implements OnInit {
 
   actores;
+  selectedActor:Actor;
   constructor(private actorService:ActorService) { 
 
   }
@@ -17,4 +19,8 @@ export class ActorListadoComponent implements OnInit {
     this.actores= this.actorService.obtenerActores();
   }
 
+  actorSelected( seleccionado ){
+    console.log(seleccionado);
+    this.selectedActor = seleccionado;
+  }
 }
