@@ -18,7 +18,7 @@ export class BusquedaComponent implements OnInit {
 
   ngOnInit(): void {
     this.peliculas = this.peliculasService.obtenerPeliculas();
-    //this.actores = this.actoresService.obtenerActores();
+    this.actores = this.actoresService.obtenerActores();
   }
 
   verDetalle(event){
